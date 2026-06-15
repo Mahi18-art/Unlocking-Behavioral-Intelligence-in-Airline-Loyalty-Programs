@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+env/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Local raw / intermediate data (do NOT commit large source files).
+# NOTE: data/Customer_Retention_Action_Plan.csv IS required by app.py and
+# must be committed for Streamlit Cloud, so it is force-kept below.
+data/Customer Flight Activity.csv
+data/Customer Loyalty History.csv
+data/Calendar.csv
+data/Customer_Loyalty_Flights_Combined.csv
+data/Customer_Master_Features_All.csv
+data/Customer_Clustering_KMeans_Input.csv
+data/Customer_Master_Features_With_Churn.csv
+data/Customer_Master_Segmented.csv
+data/Customer_Final_Profiled.csv
+data/Customer_Final_With_ChurnRisk.csv
+!data/Customer_Retention_Action_Plan.csv

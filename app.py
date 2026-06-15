@@ -1,10 +1,31 @@
+from pathlib import Path
+
 import streamlit as st
 import pandas as pd
 import plotly.express as px
 
 st.set_page_config(page_title="Loyalty Dashboard", layout="wide")
 
-df = pd.read_csv("data/Customer_Retention_Action_Plan.csv")
+# Resolve the data path relative to this file so it works locally and on
+# Streamlit Community Cloud regardless of the process working directory.
+DATA_PATH = Path(__file__).parent / "data" / "Customer_Retention_Action_Plan.csv"
+
+
+@st.cache_data
+def load_data(path):
+    return pd.read_csv(path)
+
+
+if not DATA_PATH.exists():
+    st.error(
+        "Required data file not found: `data/Customer_Retention_Action_Plan.csv`.\n\n"
+        "Generate it by running `airline_loyalty_final.ipynb` (it exports this file "
+        "to the `data/` folder) and commit it to the repository so the deployed app "
+        "can read it."
+    )
+    st.stop()
+
+df = load_data(DATA_PATH)
 
 # Sidebar filters
 st.sidebar.title("Filters")
