@@ -1,4 +1,4 @@
-# ✈️ Unlocking Behavioral Intelligence in Airline Loyalty Programs
+# Unlocking Behavioral Intelligence in Airline Loyalty Programs
 
 [![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://4tmgueytklxvnjbes5qhga.streamlit.app/)
 [![Python](https://img.shields.io/badge/Python-3.12%2B-blue.svg)](https://www.python.org/)
@@ -8,11 +8,11 @@ Behavioral **churn prediction** and a **retention action planner** for **16,737*
 Canadian airline loyalty members (Jan 2017 – Dec 2018), delivered as an
 interactive Streamlit dashboard.
 
-### 🔗 Live app: **https://4tmgueytklxvnjbes5qhga.streamlit.app/**
+### Live app: **https://4tmgueytklxvnjbes5qhga.streamlit.app/**
 
 ---
 
-## 💡 The idea
+## The idea
 
 Loyalty programs are usually managed around points and rewards. The blind spot:
 a member can look healthy on paper — still enrolled, high historical CLV — while
@@ -32,7 +32,7 @@ This project reframes the problem around three questions:
 
 ---
 
-## 📊 The dashboard
+## The dashboard
 
 The Streamlit app (`app.py`) turns the model output into an operational tool:
 
@@ -45,7 +45,7 @@ The Streamlit app (`app.py`) turns the model output into an operational tool:
 
 ---
 
-## 🧠 The analysis (`airline_loyalty_final.ipynb`)
+## The analysis (`airline_loyalty_final.ipynb`)
 
 | Stage | What happens |
 |---|---|
@@ -71,7 +71,7 @@ the high-risk population alone represents **~$18.6M of CLV at risk**.
 
 ---
 
-## 🚀 Run locally
+## Run locally
 
 ```bash
 git clone https://github.com/Mahi18-art/Unlocking-Behavioral-Intelligence-in-Airline-Loyalty-Programs.git
@@ -87,7 +87,7 @@ is ever missing, the app shows generation instructions instead of crashing — s
 
 ---
 
-## ☁️ Deploy on Streamlit Community Cloud
+## Deploy on Streamlit Community Cloud
 
 1. Push this repo to GitHub (including `data/Customer_Retention_Action_Plan.csv`).
 2. Go to [share.streamlit.io](https://share.streamlit.io) → **New app**.
@@ -100,7 +100,7 @@ is ever missing, the app shows generation instructions instead of crashing — s
 
 ---
 
-## 📁 Project structure
+## Project structure
 
 ```
 .
@@ -116,6 +116,6 @@ is ever missing, the app shows generation instructions instead of crashing — s
 
 ---
 
-## 🛠️ Tech stack
+## Tech stack
 
 `Python` · `pandas` · `scikit-learn` · `XGBoost` · `SHAP` · `Plotly` · `Streamlit`
